@@ -1,0 +1,8 @@
+---
+- name: Pull docker image
+  hosts: all
+  tasks:
+    - name: Pull mini-project image
+      docker_image:
+        name: shmfaraz15/mini-project
+        source: pull
